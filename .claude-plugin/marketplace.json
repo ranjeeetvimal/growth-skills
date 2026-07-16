@@ -1,0 +1,29 @@
+{
+  "name": "Growth Skills by Ranjeet Vimal",
+  "description": "Founder-level skills for PLG, paid marketing, SEO, and analytics. Built by founders, for founders.",
+  "repository": "https://github.com/ranjeetvimal/growth-skills",
+  "suites": {
+    "PLG-Architect": {
+      "description": "Product-Led Growth strategy skills",
+      "skills": ["plg-strategy", "icp-research", "competitive-intel", "viral-loops", "content-strategy", "growth-metrics"]
+    },
+    "Paid-Marketing": {
+      "description": "Paid acquisition skills",
+      "skills": [],
+      "status": "coming-soon"
+    },
+    "SEO": {
+      "description": "Organic search skills",
+      "skills": [],
+      "status": "coming-soon"
+    },
+    "Analytics": {
+      "description": "Data and analytics skills",
+      "skills": [],
+      "status": "coming-soon"
+    }
+  },
+  "author": "Ranjeet Vimal",
+  "license": "MIT",
+  "version": "3.0.0"
+}
