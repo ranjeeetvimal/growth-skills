@@ -17,7 +17,7 @@
 ## Install This Suite
 
 ```bash
-npx skills add ranjeetvimal/growth-skills --suite PLG-Architect
+npx skills add ranjeeetvimal/growth-skills --suite PLG-Architect
 ```
 
 ## How It Works

@@ -16,13 +16,13 @@
 
 ```bash
 # Install everything
-npx skills add ranjeetvimal/growth-skills
+npx skills add ranjeeetvimal/growth-skills
 
 # Install just one suite
-npx skills add ranjeetvimal/growth-skills --suite PLG-Architect
+npx skills add ranjeeetvimal/growth-skills --suite PLG-Architect
 
 # Install specific skills
-npx skills add ranjeetvimal/growth-skills --skill plg-strategy icp-research
+npx skills add ranjeeetvimal/growth-skills --skill plg-strategy icp-research
 ```
 
 ## Philosophy
