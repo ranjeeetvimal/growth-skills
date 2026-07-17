@@ -1,87 +1,112 @@
 ---
 name: founder-context
 description: >
-  Collects founder-specific business context through a short guided
-  interview, then saves it to .claude/founder-context.md so the other
-  growth skills can read it instead of asking again or assuming.
-  Use at the start of any growth conversation when the founder has
-  not yet shared their product details, or when another skill reports
-  that founder context is missing.
+  Collects founder-specific business context the magic way — ask for a URL,
+  auto-draft the whole context from the site (plus light research), and have
+  the founder confirm/correct instead of typing it all. Then asks only for
+  what a site can't know (evidence, assumptions, constraints, goals, fears).
+  Saves to .claude/founder-context.md so every other growth skill reads it
+  instead of asking again. Use at the start of any growth conversation, or
+  when another skill reports that founder context is missing.
 license: MIT
 metadata:
   author: Ranjeet Vimal
-  version: "0.4.0"
+  version: "0.5.0"
   category: context
   related-skills: plg-strategy, icp-research, competitive-intel, viral-loops, content-strategy, growth-metrics
 ---
 
-# Founder Context — Load Once, Use Everywhere
+# Founder Context — URL In, Context Out
 
-You collect the founder's business details ONCE, fast, then save them
-to a file so every other skill in this suite reads them without asking
-again. Keep this short — the other skills do their own research
-(competitors, benchmarks, keywords), so you only need what ONLY the
-founder knows.
+Collect the founder's context ONCE, and make it feel like magic: they give you
+a URL, you draft everything you can from it, they confirm and correct. You only
+*ask* for what a website genuinely can't tell you. Never make them type what you
+can already see.
 
 ## First: check for existing context
-Check whether `.claude/founder-context.md` exists (read it if you can).
-- Exists and complete: summarize it in 2-3 lines, ask "Still accurate?"
-  Only re-ask what changed.
-- Missing/incomplete: run the interview below.
+If `.claude/founder-context.md` exists, read it, summarize in 2-3 lines, ask
+"Still accurate?" and only re-do what changed. Otherwise start below.
 
-## The interview — ONE question at a time
-Rules:
-1. **Ask ONE question at a time.** Wait for the answer. Never paste the list.
-2. **Make each self-explanatory** — one line of "why it matters" + 2-3
-   example answers, so the founder knows what a good reply looks like.
-3. **Offer a best-guess draft when you can.** If the founder gave a URL,
-   read the public site first and pre-fill your guess for them to confirm
-   or correct — don't make them type what you can already see.
-4. **"I don't know" is valid** — record it as a gap, never guess a number.
-5. **Keep it to 8 questions.** Don't ask for competitors — `competitive-intel`
-   finds those. Don't ask for benchmarks — the skills supply those.
+## Step 1 — Ask for the URL (the ONE thing you need to start)
+Open with: "Drop your URL and I'll draft your whole context — you just confirm
+and correct. No site yet? Describe it in a sentence and we'll go from there."
+Nothing else. One ask.
 
-Ask, in order:
-1. **Product, in one sentence?** (why: everything hangs off it) — pre-fill from their URL if given.
-2. **Stage?** (why: pre-launch vs scale change everything) — Pre-launch · Early · Growth · Scale.
-3. **How do you make money (or plan to)?** — Free · Freemium · Paid · Sales-led · Marketplace.
-4. **Who do you think your customer is?** (why: the belief we'll stress-test) — one specific slice, not "everyone".
-5. **What evidence do you have for that customer?** — Interviews · Paying users · Signups · None yet.
-6. **Why do customers pick you over alternatives?** (why: your claimed wedge) — one sentence.
-7. **What's your constraint?** (why: strategy is sequenced by it) — runway, team size, eng capacity, founder's strength/weakness, and the ONE metric that must move in 90 days. "Solo, 6 months runway, need first paying users" is a fine answer.
-8. **What keeps you up at night about this business?** (why: the real strategy hides in the fear).
+## Step 2 — Auto-draft from the URL (do the work FOR them)
+Read the public site (and do a quick competitor search if useful). Draft every
+field you can infer. Mark each as **(from your site)** — solid — or **(my guess —
+confirm)** — inferred. Fields to fill from the URL:
+- **Product** — one sentence.
+- **Stage** — best guess from site maturity [Idea / MVP / Private Beta / Public Launch / Early Revenue / Growth / Scale].
+- **Business model + pricing** — [Free / Freemium / Subscription / Usage-based / Marketplace / Enterprise / Ads / Hybrid].
+- **ICP** — "your first 100 will be ___ because ___" (a guess to confirm; avoid "everyone").
+- **Problem** — "before us, customers… / after us, customers…" (from the copy).
+- **Alternatives** — top 3 they compete with (from research).
+- **Why you** — the claimed differentiator, one sentence.
 
-## Then: save the context
-Assemble into this block and **write it to `.claude/founder-context.md`**
-(create `.claude/` if needed). If you can't write files, print it and tell
-the founder to save it there.
+## Step 3 — Present the draft, invite corrections (not field-by-field)
+Show the whole draft as one scannable block. Say: "Here's what I pulled — reply
+**'looks good'** to accept it all, or just tell me what's wrong." Accept natural
+corrections; don't force a yes/no on every line. This is the magic moment — make
+it feel like you already understand the business.
+
+## Step 4 — Ask only what the site can't know (brief, pre-guess where you can)
+Now the internal-only fields. Ask these one at a time or in tight logical groups,
+and offer a best-guess draft for the founder to confirm wherever the business type
+makes one reasonable. "I don't know" is valid — record it as a gap.
+- **Evidence** for the ICP — [none / personal experience / interviews / waitlist / active users / paying / revenue / referrals] + their strongest proof.
+- **Top 3 assumptions** that must be true for this to work.
+- **Biggest unknown** — "we don't know whether…".
+- **Constraints** — team size, runway, budget, eng capacity, founder strengths + weaknesses.
+- **The ONE 90-day goal** — a single objective (first 20 paying, validate PMF, $5k MRR, 1,000 activated, raise seed).
+- **Biggest fear** — one sentence.
+- **Failure condition** — "if ___ happens, we'll rethink the strategy."
+- **Won't-do list** — hard lines (no paid ads, bootstrap only, privacy-first, no enterprise…).
+
+## Step 5 — Save the context
+Assemble into the block below and **write it to `.claude/founder-context.md`**
+(create `.claude/` if needed). If you can't write files, print it and tell them to save it.
 
 ```
 # FOUNDER CONTEXT
 
+## Business
 Product: [one sentence]
-Stage: [Pre-launch / Early / Growth / Scale]
-Business model: [Free / Freemium / Paid / Sales-led / Marketplace]
+Stage: [Idea / MVP / Private Beta / Public Launch / Early Revenue / Growth / Scale]
+Business model: [Free / Freemium / Subscription / Usage-based / Marketplace / Enterprise / Ads / Hybrid]
 Pricing: [price or "not set"]
 
-ICP (claimed): [description]
-Evidence for ICP: [interviews / customers / signups / none yet]
+## Customer & Problem
+ICP (first 100): [who] because [why]
+Problem: before us [...] → after us [...]
+Evidence for ICP: [none / personal / interviews / waitlist / active users / paying / revenue / referrals] — strongest: [...]
 
-Differentiator (claimed): [claim]
-Evidence for differentiator: [quotes / churn reasons / reviews / none yet]
+## Competition & Positioning
+Alternatives today: [top 3]
+Why us: [one sentence]
 
-Metrics: [users / activation / conversion / MRR / CAC / LTV — or "unknown"]
+## Strategy & Validation
+Key assumptions (must be true): [1; 2; 3]
+Biggest unknown: we don't know whether [...]
 
-Constraints: [runway / team size / eng capacity / founder strength+weakness / the one 90-day metric]
+## Constraints & Priorities
+Constraints: [team / runway / budget / eng capacity / founder strengths / weaknesses]
+90-day goal (ONE): [...]
 
-Biggest fear: [what keeps them up at night]
+## Risk & Decisions
+Biggest fear: [...]
+Failure condition: if [...] we rethink
+Won't do: [...]
 
-Gaps (unknown / none yet): [list them]
+## Gaps
+[fields still unknown / to validate]
 ```
 
-Confirm in one line: "Saved to `.claude/founder-context.md` — the other
-skills will read this, so you won't repeat yourself."
+Confirm in one line: "Saved to `.claude/founder-context.md` — every other skill
+reads this, so you won't repeat yourself."
 
 ## How other skills use this
-Every other skill starts by reading `.claude/founder-context.md`. If it's
-missing they run this skill or ask inline — they never invent numbers.
+Every skill starts by reading `.claude/founder-context.md`. plg-strategy also uses
+the assumptions, constraints, failure condition, and won't-do list directly (its
+stress-test, kill/pivot signals, and sacrifices). If the file is missing, skills
+run this one or ask inline — they never invent numbers.
