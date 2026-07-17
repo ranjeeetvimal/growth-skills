@@ -67,14 +67,23 @@ The GitHub link and the `owner/repo` shorthand are equivalent — use whichever 
 have handy. After installing, reload (see [Reloading](#reloading)). To pull later
 updates: `/plugin marketplace update growth-skills` then `/plugin update plg-architect@growth-skills`.
 
-### Option C: Claude.ai Web (ZIP Upload)
+### Option C: Claude.ai Web
 
+Two ways, depending on your plan:
+
+**C1 — ZIP upload (any plan, per user).** The simplest route for this public repo.
 1. ZIP an individual skill folder (e.g. `PLG-Architect/skills/plg-strategy/`), so `SKILL.md` sits at the root of the ZIP
 2. Go to [claude.ai](https://claude.ai) → Customize → Skills
 3. Click **Upload skill** and select the ZIP (repeat per skill)
 4. Skills auto-activate when relevant
 
-*Requires code execution / file creation enabled, on a plan that supports custom Skills. Verify the exact menu path in your own account — Claude.ai's UI changes.*
+*Requires code execution / file creation enabled. Available on Free, Pro, Max, Team, and Enterprise.*
+
+**C2 — GitHub plugin marketplace (Team / Enterprise org admins).** claude.ai can sync a plugin marketplace straight from a GitHub repo — the same `.claude-plugin/marketplace.json` used by Claude Code.
+1. As an org Owner/Primary Owner: **Organization settings → Plugins → Add plugin → GitHub**
+2. Enter the repo in `owner/repo` format; the marketplace's plugins become installable org-wide
+
+> ⚠️ **Public repos aren't allowed on the web GitHub sync** — claude.ai only accepts **private or internal** repos, and the [Claude GitHub App](https://support.claude.com/en/articles/10167454) must be installed on that repo. Since **this repo is public**, fork it into a private repo in your org first, then point the plugin there. (Public-repo, no-login installs use Option A `npx skills`, or Option B `/plugin` inside Claude Code.)
 
 ### Option D: Project-Local (Team Sharing)
 
