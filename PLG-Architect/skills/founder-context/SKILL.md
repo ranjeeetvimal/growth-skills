@@ -10,85 +10,50 @@ description: >
 license: MIT
 metadata:
   author: Ranjeet Vimal
-  version: "0.1.0"
+  version: "0.2.0"
   category: context
   related-skills: plg-strategy, icp-research, competitive-intel, viral-loops, content-strategy, growth-metrics
 ---
 
 # Founder Context — Load Once, Use Everywhere
 
-You collect the founder's business details ONCE through a short
-interview, then save them to a file so every other skill in this
-suite can read them without asking again.
+You collect the founder's business details ONCE, fast, then save them
+to a file so every other skill in this suite reads them without asking
+again. Keep this short — the other skills do their own research
+(competitors, benchmarks, keywords), so you only need what ONLY the
+founder knows.
 
 ## First: check for existing context
-
-Before asking anything, check whether `.claude/founder-context.md`
-already exists (read it if your environment allows file reads).
-
-- If it exists and looks complete: summarize it back in 2-3 lines and
-  ask "Still accurate, or has anything changed?" Only re-interview the
-  fields that changed.
-- If it doesn't exist or is incomplete: run the interview below.
+Check whether `.claude/founder-context.md` exists (read it if you can).
+- Exists and complete: summarize it in 2-3 lines, ask "Still accurate?"
+  Only re-ask what changed.
+- Missing/incomplete: run the interview below.
 
 ## The interview — ONE question at a time
+Rules:
+1. **Ask ONE question at a time.** Wait for the answer. Never paste the list.
+2. **Make each self-explanatory** — one line of "why it matters" + 2-3
+   example answers, so the founder knows what a good reply looks like.
+3. **Offer a best-guess draft when you can.** If the founder gave a URL,
+   read the public site first and pre-fill your guess for them to confirm
+   or correct — don't make them type what you can already see.
+4. **"I don't know" is valid** — record it as a gap, never guess a number.
+5. **Keep it to 7 questions.** Don't ask for competitors — `competitive-intel`
+   finds those. Don't ask for benchmarks — the skills supply those.
 
-Run this like a conversation, not a form. Rules:
-
-1. **Ask ONE question at a time.** Wait for the founder's answer before
-   asking the next. Never paste the whole list at once.
-2. **Make each question self-explanatory.** For every question, add a
-   one-line "why this matters" and 2-3 example answers or options, so
-   the founder always knows what a good reply looks like.
-3. **Accept "I don't know."** That is valid data — record it as a gap,
-   don't guess or fill it in.
-4. **Keep it short.** No preamble. Ask, wait, acknowledge in one line,
-   move on.
-
-Ask these in order:
-
-1. **What's your product, in one sentence?**
-   Why: everything else hangs off what it actually does.
-   Example: "A pre-deployment testing platform for voice AI agents."
-
-2. **What stage are you at?**
-   Why: strategy for pre-launch is different from strategy for scale.
-   Options: Pre-launch · Early (first users) · Growth · Scale.
-
-3. **How do you make money (or plan to)?**
-   Why: the business model decides which growth motions even apply.
-   Options: Free · Freemium · Paid (self-serve) · Sales-led/Enterprise · Marketplace.
-
-4. **Who do you think your customer is?**
-   Why: this is the belief we'll stress-test hardest.
-   Example: "Voice AI engineering teams at Series-A startups."
-
-5. **What evidence do you have for that customer?**
-   Why: "I think" vs "10 interviews" changes everything downstream.
-   Options: Real interviews · Paying customers · Signups only · None yet.
-
-6. **Why do you think customers pick you over alternatives?**
-   Why: this is your claimed differentiator — we'll test if it's real.
-   Example: "We're the only one that tests on the actual telephony stack."
-
-7. **Who are your top 2-3 competitors?**
-   Why: needed for moat analysis; "none" is a red flag, not a win.
-   Example: "Hamming, Cekura, Coval."
-
-8. **What numbers do you have?** (users, activation %, conversion %, MRR/ARR, CAC, LTV)
-   Why: metrics separate real strategy from guessing.
-   Note: "unknown" for any of these is fine — just say so.
-
-9. **What keeps you up at night about this business?**
-   Why: the real strategy usually lives inside the founder's fear.
-   Example: "That a well-funded competitor ships this for free."
+Ask, in order:
+1. **Product, in one sentence?** (why: everything hangs off it) — pre-fill from their URL if given.
+2. **Stage?** (why: pre-launch vs scale change everything) — Pre-launch · Early · Growth · Scale.
+3. **How do you make money (or plan to)?** — Free · Freemium · Paid · Sales-led · Marketplace.
+4. **Who do you think your customer is?** (why: the belief we'll stress-test) — one specific slice, not "everyone".
+5. **What evidence do you have for that customer?** — Interviews · Paying users · Signups · None yet.
+6. **Why do customers pick you over alternatives?** (why: your claimed wedge) — one sentence.
+7. **What keeps you up at night about this business?** (why: the real strategy hides in the fear).
 
 ## Then: save the context
-
-Once the interview is done, assemble the answers into this block and
-**write it to `.claude/founder-context.md`** (create the `.claude`
-directory if needed). If your environment can't write files, print the
-block and tell the founder to save it there manually.
+Assemble into this block and **write it to `.claude/founder-context.md`**
+(create `.claude/` if needed). If you can't write files, print it and tell
+the founder to save it there.
 
 ```
 # FOUNDER CONTEXT
@@ -96,7 +61,7 @@ block and tell the founder to save it there manually.
 Product: [one sentence]
 Stage: [Pre-launch / Early / Growth / Scale]
 Business model: [Free / Freemium / Paid / Sales-led / Marketplace]
-Pricing: [price point or "not set"]
+Pricing: [price or "not set"]
 
 ICP (claimed): [description]
 Evidence for ICP: [interviews / customers / signups / none yet]
@@ -104,27 +69,16 @@ Evidence for ICP: [interviews / customers / signups / none yet]
 Differentiator (claimed): [claim]
 Evidence for differentiator: [quotes / churn reasons / reviews / none yet]
 
-Competitors: [names or "none identified"]
-
-Metrics:
-  Users: [n or unknown]
-  Activation: [% or unknown]
-  Conversion: [% or unknown]
-  MRR/ARR: [$ or unknown]
-  CAC: [$ or unknown]
-  LTV: [$ or unknown]
+Metrics: [users / activation / conversion / MRR / CAC / LTV — or "unknown"]
 
 Biggest fear: [what keeps them up at night]
 
-Gaps (marked "unknown" or "none yet"): [list them]
+Gaps (unknown / none yet): [list them]
 ```
 
-After saving, confirm in one line: "Saved to `.claude/founder-context.md`
-— the other skills will read this, so you won't have to repeat yourself."
+Confirm in one line: "Saved to `.claude/founder-context.md` — the other
+skills will read this, so you won't repeat yourself."
 
 ## How other skills use this
-
-Every other skill in this suite starts by reading
-`.claude/founder-context.md`. If it exists, they use it. If it's
-missing, they either run this skill first or ask the founder inline —
-they never invent numbers to fill the gaps.
+Every other skill starts by reading `.claude/founder-context.md`. If it's
+missing they run this skill or ask inline — they never invent numbers.
