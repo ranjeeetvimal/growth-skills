@@ -44,6 +44,14 @@ pattern: a "cost calculator" vs an incumbent, a "risk/health checker," a
 - **Honest scarcity** — founding-member pricing with a REAL date, never open-ended fake urgency.
 - **Second-act pricing** — a single low tier caps ARPU; plan expansion SKUs (analytics, multi-seat, AI) for 6-12 mo. Charge for intelligence/scale, not the core promise.
 
+## Breaking a revenue ceiling (when that's the founder's fear)
+A low price × a narrow segment = a low ceiling — that's arithmetic, not strategy.
+The three levers, in order of leverage: (1) **ARPU** — a higher-value second tier or
+usage-based add-on for the power users who already hit limits; (2) **conversion** — a
+sharper PQL and paywall placement; (3) **segment width** — expand the beachhead only
+AFTER you own it. Model which lever the ceiling actually needs (see growth-metrics'
+ceiling check) — usually it's ARPU, not more users.
+
 ---
 
 ## The "what NOT to do" discipline

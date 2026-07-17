@@ -43,3 +43,14 @@ Run 3 experiments, not 10. Every experiment needs a kill criteria BEFORE it star
 ## PMF check
 At ~500 activated users, run the Sean Ellis survey. ≥40% "very disappointed if this
 went away" = signal to scale spend. Below that, fix activation/retention first.
+
+## Ceiling / TAM check (when the founder's fear is "can I scale past $X?")
+If the fear is a revenue ceiling, MODEL it — don't just name it. Rough math:
+`reachable segment size × realistic paying % × annual price = ceiling estimate`.
+- Reachable segment = the beachhead, not the whole TAM (be honest about "reachable").
+- Paying % for a self-serve freemium tool is often low single digits of active users.
+- Then compare to the fear. Example shape: "200k reachable creators × 2% paying ×
+  $120/yr ≈ $480k — the ceiling isn't the segment, it's ARPU/conversion" OR "...×
+  0.5% × $120 ≈ $120k — the segment IS the ceiling; you need a wider beachhead or
+  a higher-ARPU tier." State every input as a labeled assumption to validate.
+This answers the founder's actual question instead of deferring it.
