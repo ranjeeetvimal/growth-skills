@@ -1,13 +1,14 @@
 # Growth Skills by Ranjeet Vimal
 
 > A collection of open-source agent skills for growth, marketing, and analytics.
-> Built by founders, for founders. Works across Claude Code, Codex, Cursor, Windsurf, and 40+ agent platforms.
+> Built by founders, for founders. Works across Claude Code, Cursor, Gemini CLI,
+> GitHub Copilot, Antigravity, and other agents on the [Agent Skills spec](https://github.com/anthropics/skills).
 
 ## Skill Suites
 
 | Suite | Skills | Status | What It Covers |
 |---|---|---|---|
-| **[PLG-Architect](PLG-Architect/)** | 6 | ✅ Live | Product-Led Growth strategy, ICP research, competitive moats, viral loops, content strategy, growth metrics |
+| **[PLG-Architect](PLG-Architect/)** | 7 | ✅ Live | Founder context intake, PLG strategy, ICP research, competitive moats, viral loops, content strategy, growth metrics |
 | **Paid-Marketing** | 0 | 🚧 Coming soon | Meta Ads, Google Ads, TikTok Ads, creative testing, attribution |
 | **SEO** | 0 | 🚧 Coming soon | Keyword research, technical SEO, link building, programmatic SEO |
 | **Analytics** | 0 | 🚧 Coming soon | Event tracking, cohort analysis, experiment design, data pipelines |
@@ -16,7 +17,10 @@
 
 ### Option A: Cross-Agent CLI (Recommended)
 
-Works in Claude Code, Codex, Cursor, Windsurf, and any agent on the [Agent Skills spec](https://github.com/anthropics/skills).
+Works in Claude Code, Cursor, Gemini CLI, GitHub Copilot, Antigravity, and any
+agent on the [Agent Skills spec](https://github.com/anthropics/skills). The CLI
+detects which agents you have and installs into `.agents/skills/`, shared across
+all of them.
 
 ```bash
 # Install all skills from this repo
@@ -31,29 +35,23 @@ npx skills add ranjeeetvimal/growth-skills --skill plg-strategy icp-research
 # List available skills before installing
 npx skills add ranjeeetvimal/growth-skills --list
 
-# Install globally (available across all projects)
+# Install globally (available across all your projects)
 npx skills add ranjeeetvimal/growth-skills -g
 ```
 
-After installing, reload:
-```bash
-/reload-skills
-```
-
-Verify installation:
-```bash
-npx skills list
-# or for global installs:
-npx skills ls -g
-```
+By default this installs into the current project. Add `-g` for a global
+install at `~/.agents/skills/`. **After installing, you must reload** — see
+[Reloading](#reloading) below (it is not a terminal command).
 
 ### Option B: Claude Code Native Plugin
 
-```bash
+Run these **inside a Claude Code session** (not the shell):
+
+```
 # Add this repo as a marketplace
 /plugin marketplace add ranjeeetvimal/growth-skills
 
-# Browse and install
+# Browse and install interactively
 /plugin
 # Then select plg-architect → Install now
 
@@ -88,24 +86,84 @@ git submodule add https://github.com/ranjeeetvimal/growth-skills.git .claude/ski
 
 ---
 
+## Updating, Reloading & Uninstalling
+
+### Updating
+
+**If you installed with the CLI (`npx skills`):**
+
+```bash
+# Refresh skills you already have to their latest version
+npx skills update
+```
+
+> ⚠️ **`update` only refreshes skills you already installed. It does NOT pull
+> new skills added to the repo since your last install.** When this repo adds a
+> skill (e.g. `founder-context`), `update` will skip it. To pick up new skills,
+> re-run `add` — it installs anything missing and overwrites the rest:
+>
+> ```bash
+> npx skills add ranjeeetvimal/growth-skills
+> ```
+>
+> A `Failed to check for deleted skills` warning during update is harmless — it
+> just means the repo removed some files (old reference templates) and the CLI
+> noted it. Your skills still update.
+
+**If you installed as a Claude Code plugin (Option B):** run inside Claude Code:
+
+```
+/plugin marketplace update growth-skills
+/plugin update plg-architect@growth-skills
+```
+
+If `/plugin update` reports "already up to date" but you know the repo changed,
+run `/plugin marketplace update` first (it re-pulls the files), or remove and
+re-add the marketplace to force a clean pull.
+
+### Reloading
+
+Installing or updating writes files to disk — your agent still needs to pick
+them up. **None of these are shell commands.**
+
+- **Claude Code:** type `/reload-skills` inside the session (or restart Claude Code).
+- **Cursor / Gemini CLI / GitHub Copilot / Antigravity / others:** restart the
+  session — skills are discovered on startup.
+
+### Verifying & Uninstalling
+
+```bash
+# See what's installed, where, and for which agents
+npx skills list
+
+# Remove a skill (interactive), or name one:
+npx skills remove --skill plg-strategy
+```
+
+CLI-installed skills live at `~/.agents/skills/<name>` (global) or
+`.agents/skills/<name>` (project), symlinked into each detected agent.
+
+---
+
 ## How to Use These Skills
 
-> **TL;DR:** Start with `plg-strategy`. It is designed to ask hard questions first. The other skills load contextually once assumptions are validated.
+> **TL;DR:** Run `founder-context` once to capture your business, then
+> `plg-strategy`. Skills auto-activate by context — or invoke any of them
+> directly by name. The sequence is a recommendation, not a lock.
 
 ### The Skill Sequence
 
-These 6 skills are designed to work in order, but **you can invoke any skill directly**. The sequence is a recommendation, not a lock.
-
 | # | Skill | When to Use | What It Does |
 |---|---|---|---|
-| 1 | `plg-strategy` | **Start here if you have no strategy.** | Asks hard questions, red-teams your business, produces a sacrifice-first strategy memo. |
+| 0 | `founder-context` | **Run first (recommended).** | Short guided interview — one question at a time — that captures your product, ICP, metrics, and fears once, saves them to `.claude/founder-context.md`, and shares them with every other skill so you never repeat yourself. |
+| 1 | `plg-strategy` | Start here if you have no strategy. | Asks hard questions, red-teams your business, produces a sacrifice-first strategy memo. |
 | 2 | `icp-research` | After you have a rough strategy but need to validate who you serve. | Finds your "desperate customer" (not just ideal). Tests if you can name 10 real people who fit all 5 criteria. |
 | 3 | `competitive-intel` | After you know your ICP. | Analyzes what competitors can copy in 30 days vs. 3 years. Finds real moats, not feature lists. |
 | 4 | `viral-loops` | After strategy + ICP + moats are clear. | Designs 1-2 viral loops as quantified bets. Models K-factor realistically. |
 | 5 | `content-strategy` | After you know where your ICP hangs out. | Picks 1-2 channels (not 10). Sacrifice-first. SEO only if your ICP actually searches. |
 | 6 | `growth-metrics` | After you have bets to measure. | Defines North Star + 3 experiments max. Every metric needs a "kill criteria." |
 
-**How to invoke:** Just describe your problem naturally. Skills auto-activate by context. Or name one explicitly:
+**How to invoke:** Just describe your problem naturally — skills auto-activate by context. Or name one explicitly:
 ```
 "Use plg-strategy to red-team my business model."
 "Run icp-research on my target audience."
@@ -115,6 +173,11 @@ These 6 skills are designed to work in order, but **you can invoke any skill dir
 ### Example Prompts (Copy-Paste Ready)
 
 Replace bracketed placeholders with your details.
+
+**founder-context:**
+```
+"Set up my founder context — interview me about my business."
+```
 
 **plg-strategy:**
 ```
@@ -166,7 +229,9 @@ Replace bracketed placeholders with your details.
 
 ### How plg-strategy Works (Staged, Not Gated)
 
-`plg-strategy` produces output in stages. It recommends this order, but **cannot technically prevent you from using other skills**. The staging is a design pattern, not enforcement.
+`plg-strategy` produces output in stages and pauses for your input between them.
+It recommends an order but **cannot technically prevent you from using other
+skills** — the staging is a design pattern, not enforcement.
 
 **Stage 1: Assumption Validation**
 - "You believe [X] is your #1 differentiator. What evidence proves this?"
@@ -180,7 +245,7 @@ Replace bracketed placeholders with your details.
 - "For every 3 things we recommend, here are 5 we are telling you NOT to do."
 
 **Stage 4: Tactics**
-- Contextually loads other skills or recommends you invoke them next.
+- Recommends which skill to run next — **you** invoke it. `plg-strategy` can't load other skills itself.
 
 ### Direct Skill Use
 
@@ -194,28 +259,6 @@ If you already validated your assumptions, invoke any skill directly:
 ```
 
 Skills will still ask hard questions — they don't skip validation rules.
-
-### VS Code / Claude Code Tips
-
-**In VS Code Claude Chat:**
-- Skills auto-activate based on context. Just describe your problem.
-- To force a skill: say `"Use [skill-name] to..."`
-- If skills don't load: type `/reload-skills` or restart the chat panel.
-
-**In Claude Code CLI:**
-```bash
-claude
-# Then just talk naturally, or:
-/plugin           # Browse plugins
-/reload-skills    # Refresh after installing
-```
-
-**Check installed skills:**
-```bash
-npx skills list
-# or for global:
-npx skills ls -g
-```
 
 ---
 
@@ -233,7 +276,7 @@ Every skill in this repo follows the same principles:
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide. Quick version:
+Contributions welcome:
 
 1. Fork the repo
 2. Add your skill suite under `Suite-Name/skills/`
@@ -243,7 +286,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide. Quick version:
 
 ## Changelog
 
-See [VERSIONS.md](VERSIONS.md).
+Tracked in the [commit history](https://github.com/ranjeeetvimal/growth-skills/commits/main).
 
 ## License
 
