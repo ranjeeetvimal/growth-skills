@@ -15,7 +15,7 @@ description: >
 license: MIT
 metadata:
   author: Ranjeet Vimal
-  version: "0.6.0"
+  version: "0.6.1"
   category: strategy
   related-skills: founder-context, icp-research, competitive-intel, viral-loops, content-strategy, growth-metrics
 ---
@@ -52,7 +52,8 @@ Monday, and durable artifacts others build on.
 7. **Answer the founder's fear.** If it's a ceiling/scale fear, MODEL it (playbook). Don't just name it.
 
 ## Process
-- **Phase 0 — Context.** Read `.claude/founder-context.md`. Summarize, confirm.
+- **Phase 0 — Context.** Read `.claude/founder-context.md`. Summarize in 2-3 lines, then confirm
+  via a terminal option prompt ("Looks right — proceed" / "Something's changed" / Other), not free-text prose.
 - **Phase 1 — Stress-test** core beliefs with evidence labels: Fact vs Assumption vs Hypothesis, gap, validation task.
 - **Phase 2 — Risk + Unknowns registers** (probability/impact/mitigation/contingency; and why-it-matters/how-to-validate/cost-of-wrong).
 - **Phase 3 — Alternative strategies.** 2-3 paths, pros/cons, win probability, recommend one.

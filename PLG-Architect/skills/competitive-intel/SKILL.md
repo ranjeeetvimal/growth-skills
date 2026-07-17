@@ -10,7 +10,7 @@ description: >
 license: MIT
 metadata:
   author: Ranjeet Vimal
-  version: "0.6.0"
+  version: "0.6.1"
   category: research
   related-skills: plg-strategy, icp-research, founder-context
 ---
@@ -29,8 +29,9 @@ the founder shouldn't have to hand you a competitor list.
 Read `.claude/founder-context.md` and `.claude/strategy-snapshot.md` (obey its principles).
 Then **find the competitors yourself** via web search — **8-12 real competitors** with pricing,
 free tier, positioning. Cross-check figures across ≥2 sources; note the date; flag competitor-blog
-(biased) sources. Then ask the founder ONE thing: "Here's who I found — who do you actually lose
-deals to, and did I miss anyone?" Never open with "who are your competitors?"
+(biased) sources. Then ask the founder ONE thing — **as a terminal multiple-choice option prompt,
+not free-text prose**: "Who do you actually lose deals to?" with the competitors you found as
+selectable options, plus "Manual / no tool" and "Other". Never open with "who are your competitors?"
 
 ## Rules
 1. **Elaborate — don't summarize.** Each moat and each recommendation gets worked out: what it is,
