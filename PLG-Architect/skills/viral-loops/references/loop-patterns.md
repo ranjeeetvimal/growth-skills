@@ -1,4 +1,4 @@
-# Loop Patterns + Activation
+# Loop Patterns, Activation & Retention
 
 ## Loop type menu (pick 1-2, not 5)
 | Loop | Mechanic | Fits | Honest K |
@@ -21,6 +21,24 @@ strong content loop. Instrument the loop input → visit → signup.
 - **TTV target** < 5 min self-serve; instrument the riskiest step separately.
 - **Template-first onboarding**, forced self-test ("do X now"), celebrate the aha.
 - **Activation benchmark:** ≥50% of signups reach the aha within 24h is healthy.
+- Write the onboarding **step by step** (screen by screen), not as a summary.
+- Turn any constraint (a ramp, a limit) into a **progress mechanic** ("you levelled up").
+
+## Retention (activation without retention is a leaky bucket)
+Acquisition and activation are wasted if users don't come back. Design retention
+as deliberately as the loop. Levers:
+- **Weekly value receipt** — email/notify what the product DID for them this week,
+  with the counterfactual ("we did X, saving you ~Y hours"). Doubles as the upsell surface.
+- **Habit anchored to the user's trigger, not daily logins** — tie re-engagement to
+  their natural cadence (they post in bursts → don't punish gaps).
+- **Re-engagement ladder** — Day 3 (not activated → one-click template), Day 7
+  (activated but not repeating → a micro-lesson that unlocks more value), Day 30
+  (results recap + the offer).
+- **Status / telemetry as a reason to return** — a small "all healthy" signal deepens
+  trust and pulls the user back (especially for a product guarding something they value).
+- **Community** — a members space where users share plays; the UGC feeds your templates
+  and content. Retention through belonging, not just utility.
+Name the ONE retention lever with the most leverage for this product and elaborate it.
 
 ## Free-to-paid as a bet
 Name the current conversion (or "unknown"), the target with a source, the change,
