@@ -10,7 +10,7 @@ description: >
 license: MIT
 metadata:
   author: Ranjeet Vimal
-  version: "0.3.0"
+  version: "0.4.0"
   category: research
   related-skills: plg-strategy, icp-research, founder-context
 ---
@@ -27,6 +27,7 @@ yourself — the founder shouldn't have to hand you a competitor list.
 
 ## Start: read context, then RESEARCH (don't interrogate)
 Read `.claude/founder-context.md` for product, category, and claimed differentiator.
+Also read `.claude/strategy-snapshot.md` if it exists and obey its strategic principles.
 Then **find the competitors yourself** via web search per the reference method — aim
 for **8-12 real competitors** with pricing, free tier, positioning. Cross-check figures
 across ≥2 sources; note the date and flag competitor-blog (biased) sources. Then ask the

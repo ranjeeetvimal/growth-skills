@@ -10,7 +10,7 @@ description: >
 license: MIT
 metadata:
   author: Ranjeet Vimal
-  version: "0.3.0"
+  version: "0.4.0"
   category: research
   related-skills: plg-strategy, competitive-intel, founder-context
 ---
@@ -26,8 +26,9 @@ invent them cold.
   format, trigger events, watering holes, the 30-day validation script.
 
 ## Start: read context, then draft (don't interrogate)
-Read `.claude/founder-context.md` for product, stage, and claimed ICP. If the founder
-gave a URL, read the public site. Then **do the work yourself**: run the too-broad test,
+Read `.claude/founder-context.md` for product, stage, and claimed ICP. Also read
+`.claude/strategy-snapshot.md` if it exists and obey its strategic principles. If the
+founder gave a URL, read the public site. Then **do the work yourself**: run the too-broad test,
 propose a beachhead, draft 2-4 candidate personas as HYPOTHESES. Ask the founder to
 react and correct — don't ask them to build personas from scratch.
 

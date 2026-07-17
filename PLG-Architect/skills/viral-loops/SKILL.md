@@ -9,7 +9,7 @@ description: >
 license: MIT
 metadata:
   author: Ranjeet Vimal
-  version: "0.3.0"
+  version: "0.4.0"
   category: growth-engineering
   related-skills: plg-strategy, growth-metrics, founder-context
 ---
@@ -27,8 +27,9 @@ finds the one real loop a product has, then makes it concrete.
   don't duplicate pricing strategy.
 
 ## Start: read context, then design
-Read `.claude/founder-context.md` for product type, model, metrics. Match the product
-to the loop menu yourself — don't ask which loop they want; propose the 1-2 that fit and
+Read `.claude/founder-context.md` for product type, model, metrics. Also read
+`.claude/strategy-snapshot.md` if it exists and obey its strategic principles. Match the
+product to the loop menu yourself — don't ask which loop they want; propose the 1-2 that fit and
 say why the others don't.
 
 ## Process

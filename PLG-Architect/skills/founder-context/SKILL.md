@@ -10,7 +10,7 @@ description: >
 license: MIT
 metadata:
   author: Ranjeet Vimal
-  version: "0.3.0"
+  version: "0.4.0"
   category: context
   related-skills: plg-strategy, icp-research, competitive-intel, viral-loops, content-strategy, growth-metrics
 ---
@@ -38,7 +38,7 @@ Rules:
    read the public site first and pre-fill your guess for them to confirm
    or correct — don't make them type what you can already see.
 4. **"I don't know" is valid** — record it as a gap, never guess a number.
-5. **Keep it to 7 questions.** Don't ask for competitors — `competitive-intel`
+5. **Keep it to 8 questions.** Don't ask for competitors — `competitive-intel`
    finds those. Don't ask for benchmarks — the skills supply those.
 
 Ask, in order:
@@ -48,7 +48,8 @@ Ask, in order:
 4. **Who do you think your customer is?** (why: the belief we'll stress-test) — one specific slice, not "everyone".
 5. **What evidence do you have for that customer?** — Interviews · Paying users · Signups · None yet.
 6. **Why do customers pick you over alternatives?** (why: your claimed wedge) — one sentence.
-7. **What keeps you up at night about this business?** (why: the real strategy hides in the fear).
+7. **What's your constraint?** (why: strategy is sequenced by it) — runway, team size, eng capacity, founder's strength/weakness, and the ONE metric that must move in 90 days. "Solo, 6 months runway, need first paying users" is a fine answer.
+8. **What keeps you up at night about this business?** (why: the real strategy hides in the fear).
 
 ## Then: save the context
 Assemble into this block and **write it to `.claude/founder-context.md`**
@@ -70,6 +71,8 @@ Differentiator (claimed): [claim]
 Evidence for differentiator: [quotes / churn reasons / reviews / none yet]
 
 Metrics: [users / activation / conversion / MRR / CAC / LTV — or "unknown"]
+
+Constraints: [runway / team size / eng capacity / founder strength+weakness / the one 90-day metric]
 
 Biggest fear: [what keeps them up at night]
 

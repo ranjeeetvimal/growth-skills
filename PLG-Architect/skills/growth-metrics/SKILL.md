@@ -10,7 +10,7 @@ description: >
 license: MIT
 metadata:
   author: Ranjeet Vimal
-  version: "0.3.0"
+  version: "0.4.0"
   category: analytics
   related-skills: plg-strategy, viral-loops, founder-context
 ---
@@ -28,6 +28,7 @@ number a hypothesis until real cohorts exist.
 
 ## Start: read context, then propose
 Read `.claude/founder-context.md` for model, current metrics, and the founder's fear.
+Also read `.claude/strategy-snapshot.md` if it exists and obey its strategic principles.
 Then **propose** a North Star and target table yourself (benchmarks, labeled hypotheses).
 Don't ask the founder to pick metrics cold.
 

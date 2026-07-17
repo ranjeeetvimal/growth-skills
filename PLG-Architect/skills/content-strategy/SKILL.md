@@ -9,7 +9,7 @@ description: >
 license: MIT
 metadata:
   author: Ranjeet Vimal
-  version: "0.3.0"
+  version: "0.4.0"
   category: content
   related-skills: plg-strategy, icp-research, competitive-intel, founder-context
 ---
@@ -25,8 +25,9 @@ clusters and tools yourself — the founder reacts, they don't brainstorm.
   free tools, the 90-day calendar cadence, distribution.
 
 ## Start: read context, then draft
-Read `.claude/founder-context.md` for ICP, model, differentiator. Then **propose the
-channels, clusters, and free tools yourself** — pick the 1-2 channels where the ICP
+Read `.claude/founder-context.md` for ICP, model, differentiator. Also read
+`.claude/strategy-snapshot.md` if it exists and obey its strategic principles. Then
+**propose the channels, clusters, and free tools yourself** — pick the 1-2 channels where the ICP
 already is, draft the SEO clusters, suggest 1-3 free-tool ideas. Ask the founder to
 confirm the channel bet, not to generate it.
 
