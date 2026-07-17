@@ -9,7 +9,7 @@ description: >
 license: MIT
 metadata:
   author: Ranjeet Vimal
-  version: "0.6.0"
+  version: "1.0.0"
   category: content
   related-skills: plg-strategy, icp-research, competitive-intel, founder-context
 ---

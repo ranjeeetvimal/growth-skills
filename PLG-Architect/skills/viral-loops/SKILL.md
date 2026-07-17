@@ -12,7 +12,7 @@ description: >
 license: MIT
 metadata:
   author: Ranjeet Vimal
-  version: "0.7.0"
+  version: "1.0.0"
   category: growth-engineering
   related-skills: plg-strategy, growth-metrics, founder-context
 ---

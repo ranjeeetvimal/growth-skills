@@ -10,7 +10,7 @@ description: >
 license: MIT
 metadata:
   author: Ranjeet Vimal
-  version: "0.6.1"
+  version: "1.0.0"
   category: research
   related-skills: plg-strategy, icp-research, founder-context
 ---
@@ -60,5 +60,5 @@ Then, as connected sections:
 6. **Recommendations** — a short numbered list of concrete moat/positioning moves, each worked out.
 
 ## Tone
-- Lead with the real headline. Elaborate, specific: "I worry ReplyRush already does this, so you should…".
+- Lead with the real headline. Elaborate, specific: "I worry a well-funded competitor already does this, so you should…".
 - Never a Gartner report; never terse fragments.

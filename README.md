@@ -164,21 +164,27 @@ CLI-installed skills live at `~/.agents/skills/<name>` (global) or
 
 ## How to Use These Skills
 
-> **TL;DR:** Run `founder-context` once to capture your business, then
-> `plg-strategy`. Skills auto-activate by context — or invoke any of them
-> directly by name. The sequence is a recommendation, not a lock.
+> **TL;DR:** The suite runs **Context → Research → Strategy → Execution**. Start with
+> `founder-context`, then the two research skills (`icp-research`, `competitive-intel`),
+> then `plg-strategy` to synthesize — then the three execution skills. Strategy is built
+> *from* research, not guessed ahead of it. You can still invoke any skill directly; the
+> sequence is a recommendation, not a lock.
 
 ### The Skill Sequence
 
-| # | Skill | When to Use | What It Does |
+| # | Skill | Phase | What It Does |
 |---|---|---|---|
-| 0 | `founder-context` | **Run first (recommended).** | Short guided interview — one question at a time — that captures your product, ICP, metrics, and fears once, saves them to `.claude/founder-context.md`, and shares them with every other skill so you never repeat yourself. |
-| 1 | `plg-strategy` | Start here if you have no strategy. | Asks hard questions, red-teams your business, produces a sacrifice-first strategy memo. |
-| 2 | `icp-research` | After you have a rough strategy but need to validate who you serve. | Finds your "desperate customer" (not just ideal). Tests if you can name 10 real people who fit all 5 criteria. |
-| 3 | `competitive-intel` | After you know your ICP. | Analyzes what competitors can copy in 30 days vs. 3 years. Finds real moats, not feature lists. |
-| 4 | `viral-loops` | After strategy + ICP + moats are clear. | Designs 1-2 viral loops as quantified bets. Models K-factor realistically. |
-| 5 | `content-strategy` | After you know where your ICP hangs out. | Picks 1-2 channels (not 10). Sacrifice-first. SEO only if your ICP actually searches. |
-| 6 | `growth-metrics` | After you have bets to measure. | Defines North Star + 3 experiments max. Every metric needs a "kill criteria." |
+| 1 | `founder-context` | **Context** | Ask for a URL, auto-draft the whole business context, confirm via terminal options. Saves `.claude/founder-context.md` so nothing gets re-asked. |
+| 2 | `icp-research` | Research | Drafts the beachhead + personas as hypotheses, scores desperation, and gives a 30-day validation plan. |
+| 3 | `competitive-intel` | Research | Finds 8–12 competitors itself, builds the positioning matrix, separates real moats from table-stakes. |
+| 4 | `plg-strategy` | **Strategy** | Synthesizes the research into alternative strategies, a numbered action list, and a 30-day plan. Writes the Strategy Snapshot + Decision Log the execution skills obey. |
+| 5 | `viral-loops` | Execution | Designs the loops, the step-by-step activation, and the retention playbook. Models K-factor honestly. |
+| 6 | `content-strategy` | Execution | Picks 1–2 channels, drafts the SEO clusters + free-tool ideas, lays out a week-by-week 90-day calendar. |
+| 7 | `growth-metrics` | Execution | North Star + guardrail, an AARRR target table, and 3 experiments with kill criteria. |
+
+**Why this order:** `plg-strategy` is the synthesizer, not the opener — running it *after*
+the research means its Snapshot (and every execution skill downstream) rests on real
+customer and market findings, not first-pass assumptions.
 
 **How to invoke:** Just describe your problem naturally — skills auto-activate by context. Or name one explicitly:
 ```

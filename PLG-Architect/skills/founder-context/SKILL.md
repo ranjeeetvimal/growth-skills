@@ -11,7 +11,7 @@ description: >
 license: MIT
 metadata:
   author: Ranjeet Vimal
-  version: "0.6.0"
+  version: "1.0.0"
   category: context
   related-skills: plg-strategy, icp-research, competitive-intel, viral-loops, content-strategy, growth-metrics
 ---

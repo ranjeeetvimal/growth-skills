@@ -10,12 +10,13 @@ description: >
   Log) that downstream skills and future sessions reuse. Triggers on:
   "growth strategy", "PLG", "strategy memo", "founder advice", "business
   strategy", or when the user shares a business and asks for strategic
-  thinking. Recommends running icp-research, competitive-intel, viral-loops,
-  content-strategy, and growth-metrics next — the founder invokes those.
+  thinking. Best run AFTER founder-context, icp-research, and competitive-intel
+  so it synthesizes from real research rather than assumptions; it then
+  recommends viral-loops, content-strategy, and growth-metrics for execution.
 license: MIT
 metadata:
   author: Ranjeet Vimal
-  version: "0.6.1"
+  version: "1.0.0"
   category: strategy
   related-skills: founder-context, icp-research, competitive-intel, viral-loops, content-strategy, growth-metrics
 ---
