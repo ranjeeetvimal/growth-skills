@@ -45,19 +45,27 @@ install at `~/.agents/skills/`. **After installing, you must reload** — see
 
 ### Option B: Claude Code Native Plugin
 
-Run these **inside a Claude Code session** (not the shell):
+Run these **inside a Claude Code session** (not the shell). Add this repo as a
+plugin marketplace, then install the `plg-architect` plugin from it.
 
 ```
-# Add this repo as a marketplace
+# Add the marketplace — GitHub shorthand
 /plugin marketplace add ranjeeetvimal/growth-skills
+
+# ...or the full Git URL (works the same way)
+/plugin marketplace add https://github.com/ranjeeetvimal/growth-skills.git
 
 # Browse and install interactively
 /plugin
 # Then select plg-architect → Install now
 
-# Or install directly
+# ...or install directly
 /plugin install plg-architect@growth-skills
 ```
+
+The GitHub link and the `owner/repo` shorthand are equivalent — use whichever you
+have handy. After installing, reload (see [Reloading](#reloading)). To pull later
+updates: `/plugin marketplace update growth-skills` then `/plugin update plg-architect@growth-skills`.
 
 ### Option C: Claude.ai Web (ZIP Upload)
 
