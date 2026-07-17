@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Editor / OS junk
+*.swp
+Thumbs.db
+
+# Founder context is per-project and may hold private business data
+.claude/founder-context.md

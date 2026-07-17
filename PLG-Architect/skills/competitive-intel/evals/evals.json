@@ -1,0 +1,29 @@
+{
+  "evals": [
+    {
+      "input": "What is my competitive moat?",
+      "expected_skill": "competitive-intel",
+      "notes": "Moat question"
+    },
+    {
+      "input": "Analyze my competitors",
+      "expected_skill": "competitive-intel",
+      "notes": "Competitor analysis"
+    },
+    {
+      "input": "Can [competitor] copy our feature in 30 days?",
+      "expected_skill": "competitive-intel",
+      "notes": "Copyability question"
+    },
+    {
+      "input": "Red-team our positioning",
+      "expected_skill": "competitive-intel",
+      "notes": "Red-team language"
+    },
+    {
+      "input": "Write a blog post about SEO",
+      "expected_skill": null,
+      "notes": "Content task, not competitive"
+    }
+  ]
+}

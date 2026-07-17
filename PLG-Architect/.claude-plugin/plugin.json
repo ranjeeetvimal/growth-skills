@@ -1,0 +1,12 @@
+{
+  "name": "plg-architect",
+  "version": "0.1.0",
+  "description": "Founder-level Product-Led Growth strategy skills. Strategy-first, sacrifice-focused, evidence-based.",
+  "author": {
+    "name": "Ranjeet Vimal"
+  },
+  "repository": "https://github.com/ranjeeetvimal/growth-skills",
+  "license": "MIT",
+  "keywords": ["growth", "plg", "strategy", "founder", "saas"],
+  "skills": "./skills"
+}

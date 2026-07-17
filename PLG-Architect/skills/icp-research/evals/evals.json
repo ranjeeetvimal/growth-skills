@@ -1,0 +1,29 @@
+{
+  "evals": [
+    {
+      "input": "Who is my ideal customer?",
+      "expected_skill": "icp-research",
+      "notes": "Direct ICP question"
+    },
+    {
+      "input": "Validate my target audience",
+      "expected_skill": "icp-research",
+      "notes": "Validation language"
+    },
+    {
+      "input": "Is my ICP too broad?",
+      "expected_skill": "icp-research",
+      "notes": "ICP breadth concern"
+    },
+    {
+      "input": "Run the desperate customer test",
+      "expected_skill": "icp-research",
+      "notes": "Framework name mentioned"
+    },
+    {
+      "input": "Write me a Python script",
+      "expected_skill": null,
+      "notes": "Unrelated task"
+    }
+  ]
+}

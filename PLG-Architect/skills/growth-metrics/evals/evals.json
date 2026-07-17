@@ -1,0 +1,29 @@
+{
+  "evals": [
+    {
+      "input": "What is our North Star metric?",
+      "expected_skill": "growth-metrics",
+      "notes": "North Star question"
+    },
+    {
+      "input": "Design 3 experiments with kill criteria",
+      "expected_skill": "growth-metrics",
+      "notes": "Experiment design"
+    },
+    {
+      "input": "Which metrics should we kill?",
+      "expected_skill": "growth-metrics",
+      "notes": "Metric pruning"
+    },
+    {
+      "input": "Set up A/B tests for onboarding",
+      "expected_skill": "growth-metrics",
+      "notes": "Experiment setup"
+    },
+    {
+      "input": "Write a landing page headline",
+      "expected_skill": null,
+      "notes": "Copywriting task"
+    }
+  ]
+}

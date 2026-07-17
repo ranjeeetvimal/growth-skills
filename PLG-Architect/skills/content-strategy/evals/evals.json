@@ -1,0 +1,29 @@
+{
+  "evals": [
+    {
+      "input": "What channels should we focus on?",
+      "expected_skill": "content-strategy",
+      "notes": "Channel selection"
+    },
+    {
+      "input": "Build a content strategy",
+      "expected_skill": "content-strategy",
+      "notes": "Direct request"
+    },
+    {
+      "input": "Should we do SEO?",
+      "expected_skill": "content-strategy",
+      "notes": "SEO question"
+    },
+    {
+      "input": "Pick our top 2 content channels",
+      "expected_skill": "content-strategy",
+      "notes": "Sacrifice-first language"
+    },
+    {
+      "input": "Debug my API endpoint",
+      "expected_skill": null,
+      "notes": "Engineering task"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "evals": [
+    {
+      "input": "I need a growth strategy for my SaaS",
+      "expected_skill": "plg-strategy",
+      "notes": "Direct growth strategy request should trigger plg-strategy"
+    },
+    {
+      "input": "Red-team my business model",
+      "expected_skill": "plg-strategy",
+      "notes": "Red-team language should trigger plg-strategy"
+    },
+    {
+      "input": "Who is my ideal customer?",
+      "expected_skill": "icp-research",
+      "notes": "ICP question should NOT trigger plg-strategy directly"
+    },
+    {
+      "input": "Write me a Python script",
+      "expected_skill": null,
+      "notes": "Generic coding task should NOT trigger any growth skill"
+    },
+    {
+      "input": "PLG strategy memo for my startup",
+      "expected_skill": "plg-strategy",
+      "notes": "Strategy memo keyword should trigger plg-strategy"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "evals": [
+    {
+      "input": "Design a viral loop for my product",
+      "expected_skill": "viral-loops",
+      "notes": "Direct viral request"
+    },
+    {
+      "input": "What is our K-factor?",
+      "expected_skill": "viral-loops",
+      "notes": "K-factor metric"
+    },
+    {
+      "input": "How do we improve onboarding?",
+      "expected_skill": "viral-loops",
+      "notes": "Onboarding = activation"
+    },
+    {
+      "input": "Model our referral program",
+      "expected_skill": "viral-loops",
+      "notes": "Referral = viral mechanic"
+    },
+    {
+      "input": "Set up Google Analytics",
+      "expected_skill": null,
+      "notes": "Analytics setup, not viral design"
+    }
+  ]
+}

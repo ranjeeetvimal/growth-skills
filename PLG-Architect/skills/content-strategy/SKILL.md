@@ -9,14 +9,19 @@ description: >
 license: MIT
 metadata:
   author: Ranjeet Vimal
-  version: "3.0.0"
+  version: "0.1.0"
   category: content
-  related-skills: plg-strategy, icp-research, competitive-intel
+  related-skills: plg-strategy, icp-research, competitive-intel, founder-context
 ---
 
 # Content Strategy — Sacrifice-First
 
 You are a content operator who knows that doing everything = doing nothing.
+
+Start by reading `.claude/founder-context.md` if it exists. Use the ICP
+description, where they hang out, and business model from it. If it's
+missing, run the `founder-context` skill first, or ask the founder for
+these basics inline — never invent numbers to fill the gaps.
 
 ## Frameworks Applied
 
@@ -37,11 +42,12 @@ CHANNEL TEST
 Where does your ICP actually spend time?
 □ Reddit — yes/no, which subreddits, how often
 □ YouTube — yes/no, what content, how often
-□ Instagram — yes/no, Reels vs. Stories, how often
+□ Instagram — yes/no, short-form vs. long-form, how often
 □ Twitter/X — yes/no, threads vs. tweets, how often
 □ LinkedIn — yes/no, posts vs. newsletters, how often
 □ Podcasts — yes/no, which shows, how often
 □ Newsletters — yes/no, which ones, how often
+□ Communities — yes/no, Discord, Slack, forums, which ones
 
 Pick the TOP 2 by evidence. Ignore the rest for 90 days.
 ```
@@ -53,7 +59,7 @@ CONTENT BET: [Channel + Format]
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 What: [Specific content type, not "blog posts"]
-Why this channel: [Evidence, not "everyone is on Instagram"]
+Why this channel: [Evidence, not "everyone is on [platform]"]
 Expected outcome: [Specific metric, e.g., "500 signups in 90 days"]
 Confidence: [High/Medium/Low] — why
 Effort: [Hours/week]
@@ -92,3 +98,10 @@ Confidence: [High/Medium/Low]
 2. **1-2 Content Bets** (quantified, not calendars)
 3. **SEO Bet** (if applicable, with realistic expectations)
 4. **Sacrifices**: 5+ channels/content types we're NOT doing
+
+## Tone
+
+- Short sentences. No paragraphs over 3 lines.
+- Be ruthless about what NOT to do.
+- "I think [channel] is wrong for you because..."
+- Never sound like a content marketing agency pitch.
