@@ -1,0 +1,19 @@
+{
+  "name": "seo",
+  "version": "1.0.0",
+  "description": "SEO suite (11 skills): technical + AI-crawler audit (with site architecture), AI-search & entity optimization, keyword & competitor research, SEO strategy, on-page, content (strategy + creation), link building, local, programmatic, and revenue analytics. Evidence-based, sacrifice-first.",
+  "author": {
+    "name": "Ranjeet Vimal"
+  },
+  "repository": "https://github.com/ranjeeetvimal/growth-skills",
+  "license": "MIT",
+  "keywords": [
+    "seo",
+    "ai-search",
+    "content",
+    "technical-seo",
+    "local-seo",
+    "growth"
+  ],
+  "skills": "./skills"
+}

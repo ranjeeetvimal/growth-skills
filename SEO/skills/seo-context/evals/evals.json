@@ -1,0 +1,59 @@
+{
+  "evals": [
+    {
+      "input": "I need SEO help for my SaaS",
+      "expected_skill": "seo-context",
+      "notes": "Direct SEO help request — the gatekeeper should trigger"
+    },
+    {
+      "input": "Audit my SEO",
+      "expected_skill": "seo-context",
+      "notes": "SEO audit request — seo-context is the entry point (it triages, then routes)"
+    },
+    {
+      "input": "Why am I not ranking on Google?",
+      "expected_skill": "seo-context",
+      "notes": "Ranking problem, unknown cause — gather context and triage before diagnosing"
+    },
+    {
+      "input": "Build me an SEO strategy",
+      "expected_skill": "seo-context",
+      "notes": "Strategy request — context first; seo-strategy runs after the research"
+    },
+    {
+      "input": "How do I get more traffic?",
+      "expected_skill": "seo-context",
+      "notes": "Vague traffic ask — should trigger and challenge it with the revenue-first reframe"
+    },
+    {
+      "input": "We want to rank #1 for 'project management software'",
+      "expected_skill": "seo-context",
+      "notes": "Head-term ambition — reality-check DA/feasibility before keyword-research"
+    },
+    {
+      "input": "My site is slow. Is that hurting my SEO?",
+      "expected_skill": "seo-context",
+      "notes": "Diagnostic 'is this hurting me?' with unknown cause — assess and route to technical-seo-audit"
+    },
+    {
+      "input": "What keywords should I target?",
+      "expected_skill": "keyword-research",
+      "notes": "Specific keyword task — routes to the specialist, NOT the gatekeeper"
+    },
+    {
+      "input": "Fix my title tags",
+      "expected_skill": "on-page-seo",
+      "notes": "Specific on-page fix — routes to the specialist, NOT the gatekeeper"
+    },
+    {
+      "input": "Why isn't ChatGPT or Perplexity citing my site?",
+      "expected_skill": "ai-search-optimization",
+      "notes": "Specific AI-visibility question — routes to the specialist, NOT the gatekeeper"
+    },
+    {
+      "input": "Write me a Python script",
+      "expected_skill": null,
+      "notes": "Unrelated task — should NOT trigger any SEO skill"
+    }
+  ]
+}

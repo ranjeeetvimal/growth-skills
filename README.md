@@ -10,7 +10,7 @@
 |---|---|---|---|
 | **[PLG-Architect](PLG-Architect/)** | 7 | ✅ Live | Founder context intake, PLG strategy, ICP research, competitive moats, viral loops, content strategy, growth metrics |
 | **Paid-Marketing** | 0 | 🚧 Coming soon | Meta Ads, Google Ads, TikTok Ads, creative testing, attribution |
-| **SEO** | 0 | 🚧 Coming soon | Keyword research, technical SEO, link building, programmatic SEO |
+| **SEO** | 11 | 🚧 In progress | Technical + AI-crawler audit (with site architecture), AI-search & entity optimization, keyword & competitor research, SEO strategy, on-page, content, link building, local, programmatic, analytics |
 | **Analytics** | 0 | 🚧 Coming soon | Event tracking, cohort analysis, experiment design, data pipelines |
 
 ## Installation

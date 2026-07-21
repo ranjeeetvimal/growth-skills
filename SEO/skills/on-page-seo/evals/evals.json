@@ -1,0 +1,14 @@
+{
+  "evals": [
+    {
+      "input": "TODO a prompt that should trigger on-page-seo",
+      "expected_skill": "on-page-seo",
+      "notes": "TODO"
+    },
+    {
+      "input": "Write me a Python script",
+      "expected_skill": null,
+      "notes": "generic coding must NOT trigger an SEO skill"
+    }
+  ]
+}

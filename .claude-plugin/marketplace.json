@@ -14,6 +14,11 @@
       "name": "plg-architect",
       "source": "./PLG-Architect",
       "description": "Product-Led Growth strategy skills: strategy, ICP research, competitive moats, viral loops, content strategy, growth metrics. Strategy-first, sacrifice-focused, evidence-based."
+    },
+    {
+      "name": "seo",
+      "source": "./SEO",
+      "description": "SEO suite (11 skills): technical + AI-crawler audit (with site architecture), AI-search & entity optimization, keyword & competitor research, SEO strategy, on-page, content (strategy + creation), link building, local, programmatic, and revenue analytics. Evidence-based, sacrifice-first."
     }
   ]
 }
