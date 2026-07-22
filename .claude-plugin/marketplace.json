@@ -17,7 +17,7 @@
     },
     {
       "name": "seo",
-      "source": "./SEO",
+      "source": "./seo-suite",
       "description": "SEO suite (11 skills): technical + AI-crawler audit (with site architecture), AI-search & entity optimization, keyword & competitor research, SEO strategy, on-page, content (strategy + creation), link building, local, programmatic, and revenue analytics. Evidence-based, sacrifice-first."
     }
   ]
