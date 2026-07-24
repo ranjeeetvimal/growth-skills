@@ -13,7 +13,7 @@ description: >
 license: MIT
 metadata:
   author: Ranjeet Vimal
-  version: "1.0.0"
+  version: "1.1.0"
   category: context
   related-skills: x-growth, founder-context
 ---
@@ -51,7 +51,8 @@ person who'll tell them to quit a platform.
 Read `.claude/founder-context.md`. If present, pull product, ICP, differentiator, and the 90-day
 goal, and show them back: "Got your business context — this carries over." **Confirm it's for the
 SAME business** you're planning social for; if it names a different product/domain than what the
-user is asking about, DON'T inherit it — say so plainly and capture fresh basics. If absent,
+user is asking about, DON'T inherit it — say so plainly and capture fresh basics. Also confirm it's
+still current — if the file looks stale, ask "still accurate?" before relying on it. If absent,
 capture a minimal business-basics block and offer (never require): "for the full picture, run
 `founder-context` first."
 
@@ -64,13 +65,17 @@ From the ICP and what you know, draft where their buyers most likely are and why
 **(from your context)** or **(my guess — confirm)**. If you can't verify a platform's audience or
 demographics, say so; never assert numbers you haven't checked.
 
-## Step 3 — Ask only the delta (option prompts)
+## Step 3 — Ask only the delta (option prompts — ask the 3-5 that matter most, pre-guess or skip the rest)
 - **Revenue-tied goal:** Email/audience · Leads/pipeline · Launch distribution · Brand/authority · (Other).
 - **Where your ICP discovers things:** Google/search · X · LinkedIn · Instagram/TikTok · YouTube · Communities/Reddit · Not sure.
+- **Business stage:** Pre-launch / pre-PMF · Early revenue · Scaling — *stage shifts the platform bet*.
+- **Existing assets:** Email list · Other active channels · Past social attempts (what happened?) · None yet.
+- **Account type:** Personal brand · Company account — *changes voice and what converts*.
 - **Your format strength:** Writing · Talking / on-camera · Visual/design · Short-form clips · Not sure.
 - **Platforms you're on now:** (multi-select) + "None yet".
-- **Capacity:** One channel done well · Could sustain two · Have a team.
-Pre-guess where the business type makes one reasonable; "I don't know" is a valid gap.
+- **Capacity (time/week):** One channel done well · Could sustain two · Have a team.
+Pre-guess where the business type makes one reasonable; "I don't know" is a valid gap. Don't robotically
+ask all eight — pick the handful that actually change the recommendation.
 
 ## Step 4 — Pick the platform(s) (the heart)
 Match ICP + format-strength + goal against `references/platform-fit.md`. Recommend the ONE platform
@@ -78,10 +83,14 @@ Match ICP + format-strength + goal against `references/platform-fit.md`. Recomme
 why this platform, why not the others, and the honest trade-off. Then name 2-4 platforms to
 explicitly skip for now. Never recommend a platform just because it's popular.
 
-## Step 5 — Honest assessment
+## Step 5 — Honest assessment + a validation step
 - **Is organic social even the right channel, and on what timeline?** If the ICP isn't reachable
-  here, say so and name the alternative (SEO, communities, outbound, paid). Organic social compounds
-  over months of consistent posting — it is not a quick-traffic lever.
+  here, say so and route explicitly: search intent → the **SEO suite** (`seo-context`); needs a broader
+  growth plan first → **PLG** (`plg-strategy`). Also name communities / outbound / paid where they fit.
+  Organic social compounds over months of consistent posting — it is not a quick-traffic lever.
+- **Validate before committing.** Recommend a cheap test before betting a quarter on a platform — e.g.
+  "post 5 times on [platform] over 2 weeks and watch for profile visits and replies from your ICP" — so
+  the pick is validated, not assumed.
 - **No guarantees** on followers, reach, or virality — commit to a process and ranges.
 
 ## Step 6 — Save the context
@@ -96,10 +105,16 @@ Product / ICP / Differentiator / Constraints: [carried over or captured minimall
 ## Goal
 Revenue-tied goal: [the one outcome + timeline]  ← not "more followers"
 
+## Account
+Stage: [pre-PMF / early revenue / scaling]  |  Type: [personal / company]  |  Existing assets: [list / channels / none]
+
 ## Platform decision
 Primary platform: [platform] — why (ICP + format fit)
 Secondary (optional): [platform or none]
 Skipping for now: [2-4 platforms] — why
+
+## Validation step (before committing a quarter)
+[the cheap test — e.g. "5 posts on X over 2 weeks, watch profile visits + ICP replies"]
 
 ## Honest assessment
 Is organic social right: [yes / maybe / no] — why. Timeline: [...]. Recommended next skill: [...]
