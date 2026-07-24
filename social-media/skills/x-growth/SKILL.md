@@ -57,11 +57,13 @@ loop + funnel that turns attention into an owned audience.
 7. **Options, not prose.** Ask each discrete question as a terminal multiple-choice option
    prompt with an "Other". The founder should mostly click, not type.
 
-## Step 0 — Inherit business context if it exists
-Read `.claude/founder-context.md`. If present, pull product, ICP, differentiator, and the
-90-day goal, and show them back: "Got your business context — this carries over." Confirm the
-inherited context is for the SAME business as the X account; if it's for a different one, don't
-inherit it. If absent, capture a minimal business-basics block (never require the full thing).
+## Step 0 — Inherit context if it exists
+Read `.claude/social-context.md` if present — it carries the platform decision and reframed goal
+from `social-context` (if X wasn't the pick, flag that). Then read `.claude/founder-context.md` for
+the business basics: pull product, ICP, differentiator, and the 90-day goal, and show them back:
+"Got your business context — this carries over." Confirm the inherited context is for the SAME
+business as the X account; if it's for a different one, don't inherit it. If neither file exists,
+capture a minimal business-basics block (never require the full thing).
 
 ## Step 1 — Ask for the handle (one free-text ask)
 "What's your X @handle? I'll draft from it." Then read what you can of the public profile/posts.

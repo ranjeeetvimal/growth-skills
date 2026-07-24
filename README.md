@@ -12,7 +12,7 @@ Each suite is self-contained — click through for its skills, run order, and co
 |---|---|---|---|
 | **[PLG-Architect →](PLG-Architect/)** | 7 | ✅ Live | Founder-context intake, PLG strategy, ICP research, competitive moats, viral loops, content strategy, growth metrics |
 | **[SEO →](seo-suite/)** | 11 | 🚧 In progress | Gatekeeper (`seo-context`) live; technical + AI-crawler audit, AI-search & entity optimization, keyword & competitor research, strategy, on-page, content, link building, local, programmatic, analytics |
-| **[Social Media →](social-media/)** | 1 | 🚧 In progress | Organic, per-platform audience-to-revenue growth. `x-growth` (X / Twitter) live; LinkedIn, Instagram, TikTok, YouTube planned |
+| **[Social Media →](social-media/)** | 2 | 🚧 In progress | Platform-picking gatekeeper (`social-context`) + per-platform growth. `x-growth` (X / Twitter) live; LinkedIn, Instagram, TikTok, YouTube planned |
 | **Paid-Marketing** | 0 | 🚧 Coming soon | Meta Ads, Google Ads, TikTok Ads, creative testing, attribution |
 | **Analytics** | 0 | 🚧 Coming soon | Event tracking, cohort analysis, experiment design, data pipelines |
 

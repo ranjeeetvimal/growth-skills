@@ -1,0 +1,44 @@
+{
+  "evals": [
+    {
+      "input": "Help me with my social media strategy",
+      "expected_skill": "social-context",
+      "notes": "Vague social strategy — the gatekeeper should trigger"
+    },
+    {
+      "input": "Which platform should I be on?",
+      "expected_skill": "social-context",
+      "notes": "Platform-selection question — social-context's core job"
+    },
+    {
+      "input": "How do I grow my social media following?",
+      "expected_skill": "social-context",
+      "notes": "Vague growth/followers — triggers and reframes to revenue"
+    },
+    {
+      "input": "I want to build an audience but don't know where to start",
+      "expected_skill": "social-context",
+      "notes": "Where-to-start — platform selection before tactics"
+    },
+    {
+      "input": "Should I be on TikTok or LinkedIn for my B2B SaaS?",
+      "expected_skill": "social-context",
+      "notes": "Platform comparison — the fit decision"
+    },
+    {
+      "input": "Help me grow on X",
+      "expected_skill": "x-growth",
+      "notes": "Specific platform (X) — routes to the platform skill, NOT the gatekeeper"
+    },
+    {
+      "input": "What should I post on X today?",
+      "expected_skill": "x-growth",
+      "notes": "Specific X tactic — platform skill, not the gatekeeper"
+    },
+    {
+      "input": "Write me a Python script",
+      "expected_skill": null,
+      "notes": "Unrelated task — should not trigger any skill"
+    }
+  ]
+}
