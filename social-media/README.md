@@ -19,11 +19,15 @@ Install from the [repo root Quick Start](../README.md#quick-start), or grab one 
 **Start with `social-context`** — it decides which platform(s) you should even be on, then routes you. Already know it's X? Jump straight to `x-growth`.
 
 ```
-Which platform should I be on for my B2B SaaS?     → social-context
-Help me grow on X. My handle is @ranjeetvimal3.    → x-growth
+Which platform should I be on for my B2B SaaS?      → social-context
+Help me grow on X. My handle is @ranjeetvimal3.     → x-growth
+How do I get more reach on X for my SaaS?           → x-growth
+What content lane should I pick on X?               → x-growth
+Turn my X profile into an email funnel.             → x-growth
+My X posts get no engagement — what am I doing wrong? → x-growth
 ```
 
-`social-context` inherits your founder-context, reframes "more followers" into a revenue goal, picks the 1-2 platforms your ICP actually uses, and writes `.claude/social-context.md`. `x-growth` then reads that and designs the X strategy + funnel.
+`social-context` inherits your founder-context, reframes "more followers" into a revenue goal, picks the 1-2 platforms your ICP actually uses, and writes `.claude/social-context.md`. `x-growth` then reads that and designs the X strategy + funnel — it starts by asking for your handle, then walks you through option-prompts (goal, traction, cadence, lane) before drafting the plan.
 
 ## How context flows
 
