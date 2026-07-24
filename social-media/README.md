@@ -19,7 +19,7 @@ Install from the [repo root Quick Start](../README.md#quick-start), or grab one 
 Each skill stands alone — just describe your goal and it activates:
 
 ```
-Help me grow on X. My handle is @ranjeetvimal.
+Help me grow on X. My handle is @ranjeetvimal3.
 How do I get more followers / reach on Twitter?
 What should I post on X to grow my SaaS?
 ```
