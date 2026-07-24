@@ -2,8 +2,11 @@
 
 Organic social-media growth skills — parallel to PLG-Architect and the SEO suite. A **gatekeeper that picks your platform**, then **one skill per platform**, each built to grow a *real, revenue-tied audience* (not vanity followers), the sacrifice-first, evidence-based way the other suites work.
 
-Install from the [repo root Quick Start](../README.md#quick-start), or grab one skill:
-`npx skills add ranjeeetvimal/growth-skills --skill social-context`.
+**Install the whole suite** — the gatekeeper (`social-context`) routes to the platform skills, so they only work installed together:
+- **Claude Code:** `/plugin install social-media@growth-skills`
+- **Any agent:** `npx skills add ranjeeetvimal/growth-skills` (installs every suite)
+
+Then reload — see the [root Quick Start](../README.md#quick-start). (Avoid `--skill social-context` on its own — you'll get a gatekeeper that routes to skills you didn't install.)
 
 ## The skills
 

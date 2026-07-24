@@ -4,7 +4,11 @@ A 7-skill suite that takes a founder from a URL to an evidence-based, executable
 growth strategy — and leaves behind durable artifacts (a one-page Strategy Snapshot
 and a Decision Log) that the whole suite and future sessions build on.
 
-Install from the [repo root Quick Start](../README.md#quick-start).
+**Install the whole suite** — the skills build on each other (context → research → strategy → execution), so install them together:
+- **Claude Code:** `/plugin install plg-architect@growth-skills`
+- **Any agent:** `npx skills add ranjeeetvimal/growth-skills` (installs every suite)
+
+Then reload — see the [root Quick Start](../README.md#quick-start).
 
 ## Run them in this order
 

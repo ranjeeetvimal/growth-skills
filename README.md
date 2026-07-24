@@ -20,13 +20,15 @@ Each suite is self-contained — click through for its skills, run order, and co
 
 Zero to running a skill in four steps.
 
-**1. Install** — one command. Works in Claude Code, Cursor, Gemini CLI, GitHub Copilot, and Antigravity (installs into `.agents/skills/`, shared across agents):
+**1. Install** — one command installs **all** the skills. Works in Claude Code, Cursor, Gemini CLI, GitHub Copilot, and Antigravity (installs into `.agents/skills/`, shared across agents):
 
 ```bash
 npx skills add ranjeeetvimal/growth-skills
 ```
 
-Just want one suite or skill? Add `--skill`, e.g. `npx skills add ranjeeetvimal/growth-skills --skill plg-strategy`.
+> **Install the whole thing — that's the intended path.** The suites are small, and the skills work *together*: gatekeepers like `seo-context` and `social-context` route you to their sibling skills, so installing just one leaves you with hand-offs that go nowhere (this trips people up).
+> - **Want one whole suite?** In Claude Code: `/plugin install seo@growth-skills` (or `plg-architect` / `social-media`) — installs every skill in that suite. See [Other install methods](#other-install-methods).
+> - **A single standalone skill?** `npx skills add ranjeeetvimal/growth-skills --skill <name>` — only for a skill that doesn't route anywhere (e.g. `founder-context`).
 
 **2. Reload** so the agent discovers the new skills — **this is not a shell command:**
 

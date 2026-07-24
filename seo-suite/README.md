@@ -2,7 +2,11 @@
 
 An evidence-based, sacrifice-first SEO skill suite (11 skills) — parallel to PLG-Architect. Takes a domain to a full SEO strategy and the plays to execute it, built for the 2026 landscape (AI search + entities, not just keywords). Overlapping concerns are merged, not split.
 
-Install from the [repo root Quick Start](../README.md#quick-start).
+**Install the whole suite** — `seo-context` routes to the specialist skills, so they only work installed together:
+- **Claude Code:** `/plugin install seo@growth-skills`
+- **Any agent:** `npx skills add ranjeeetvimal/growth-skills` (installs every suite)
+
+Then reload — see the [root Quick Start](../README.md#quick-start).
 
 ## Run them in this order
 
