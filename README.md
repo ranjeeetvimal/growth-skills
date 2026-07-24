@@ -1,8 +1,8 @@
 # Growth Skills by Ranjeet Vimal
 
-> Open-source agent skills for growth, marketing, and analytics — built by founders, for founders.
-> Works across Claude Code, Cursor, Gemini CLI, GitHub Copilot, Antigravity, and any agent on the
-> [Agent Skills spec](https://github.com/anthropics/skills).
+> Open-source **agent skills** for founder-led growth — **PLG strategy, SEO, and X / social-media growth**.
+> Works in **Claude Code, Cursor, Gemini CLI, GitHub Copilot, and Antigravity** — any agent on the
+> [Agent Skills spec](https://github.com/anthropics/skills). Built by founders, for founders.
 
 ## Skill suites
 
@@ -26,7 +26,7 @@ Zero to running a skill in four steps.
 npx skills add ranjeeetvimal/growth-skills
 ```
 
-Just want one suite or skill? Add `--skill`, e.g. `npx skills add ranjeeetvimal/growth-skills --skill seo-context`.
+Just want one suite or skill? Add `--skill`, e.g. `npx skills add ranjeeetvimal/growth-skills --skill plg-strategy`.
 
 **2. Reload** so the agent discovers the new skills — **this is not a shell command:**
 
@@ -36,23 +36,22 @@ Just want one suite or skill? Add `--skill`, e.g. `npx skills add ranjeeetvimal/
 **3. Invoke by describing your goal** — skills auto-activate by context, so you rarely name them:
 
 ```
-I need SEO help for my site, acme.com
+Set up my founder context for acme.com — interview me about my business.
 ```
 
-`seo-context` reads your site, reframes "more traffic" into a revenue goal, triages what's likely broken, and writes `.claude/seo-context.md` — then points you to the right specialist.
+`founder-context` reads your site, auto-drafts your business (product, ICP, positioning), confirms it with you via quick options, and saves `.claude/founder-context.md`. Every other skill reads that file, so you explain your business only once — then it points you to the next skill.
 
 **4. Follow the hand-off.** Each skill leaves a shared `.claude/*.md` file and recommends the next one, so context flows forward — **Context → Research → Strategy → Execution** — and you never re-enter the same information.
 
-**More one-line examples** (each auto-activates the right skill):
+**More examples** — describe the goal, and the right skill activates:
 
 ```
-Set up my founder context — interview me about my business.   → founder-context
-I need a PLG strategy for my SaaS. We help [X] do [Y].        → plg-strategy
-Audit my SEO and tell me what's actually broken.             → seo-context
-Help me grow on X. My handle is @acme.                        → x-growth
+I need a PLG strategy for my SaaS. We help [X] do [Y].     → plg-strategy
+Validate my ICP — I think it's [target audience].          → icp-research
+Find my real moats. We lose deals to [A] and [B].          → competitive-intel
 ```
 
-> **New here?** Run `founder-context` once. Every suite (PLG, SEO, Social) reads that file, so you explain your business only once.
+> The **PLG-Architect** suite (above) is fully live. **SEO** and **Social** are usable but still in progress — start at [seo-suite/](seo-suite/) (`seo-context`) or [social-media/](social-media/) (`x-growth`).
 
 ## Other install methods
 
@@ -120,7 +119,7 @@ Every skill follows the same principles:
 
 1. Fork the repo.
 2. Add your skill under `<Suite>/skills/<skill-name>/` (`SKILL.md` + `evals/evals.json`).
-3. Follow an existing skill as the template — e.g. [`seo-context`](seo-suite/skills/seo-context/SKILL.md).
+3. Follow an existing skill as the template — e.g. [`plg-strategy`](PLG-Architect/skills/plg-strategy/SKILL.md).
 4. Run `python3 scripts/validate_skills.py` (CI runs it too), then open a PR.
 
 Full guide in [CONTRIBUTING.md](CONTRIBUTING.md).
