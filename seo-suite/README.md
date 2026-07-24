@@ -2,7 +2,7 @@
 
 An evidence-based, sacrifice-first SEO skill suite (11 skills) — parallel to PLG-Architect. Takes a domain to a full SEO strategy and the plays to execute it, built for the 2026 landscape (AI search + entities, not just keywords). Overlapping concerns are merged, not split.
 
-Install from the [repo root README](../README.md#quick-start-step-by-step).
+Install from the [repo root Quick Start](../README.md#quick-start).
 
 ## Run them in this order
 
@@ -38,6 +38,18 @@ Install from the [repo root README](../README.md#quick-start-step-by-step).
 
 ## Context: standalone, but inherits when it can
 The suite is independent — it works with only `.claude/seo-context.md`. But `seo-context` reads `.claude/founder-context.md` if PLG-Architect already wrote it, so business basics aren't re-entered. No hard dependency between the suites; the coupling is just the shared `.claude/` file.
+
+## Example prompts (copy-paste)
+
+Start with `seo-context` — it triages and routes you to the right specialist:
+
+```
+I need SEO help for my site, acme.com
+Audit my SEO and tell me what's actually broken.
+Why am I not ranking for [term]?
+Why isn't ChatGPT or Perplexity citing my site?    → ai-search-optimization
+What keywords should I target?                      → keyword-research
+```
 
 ## Principles
 Founder-first · bet-driven · sacrifice-focused · evidence-typed · elaborate + honest.

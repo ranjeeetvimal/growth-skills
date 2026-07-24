@@ -4,7 +4,7 @@ A 7-skill suite that takes a founder from a URL to an evidence-based, executable
 growth strategy — and leaves behind durable artifacts (a one-page Strategy Snapshot
 and a Decision Log) that the whole suite and future sessions build on.
 
-Install from the [repo root README](../README.md#quick-install).
+Install from the [repo root Quick Start](../README.md#quick-start).
 
 ## Run them in this order
 
@@ -28,6 +28,20 @@ it writes — and every execution skill downstream — rests on real customer an
 findings, not first-pass assumptions.
 
 You can still invoke any skill directly; the order is a recommendation, not a lock.
+
+## Example prompts (copy-paste)
+
+Describe your problem and the right skill activates — or name one explicitly:
+
+```
+Set up my founder context — interview me about my business.
+I need a PLG strategy for my SaaS. We help [X] do [Y].
+Red-team my business model — I think our moat is [assumed moat].
+Validate my ICP. I think it's [target audience].
+Find my real moats. We lose deals to [Competitor A] and [Competitor B].
+Design a viral loop — users invite teammates to collaborate.
+Define my North Star metric. We're a [type] with [pricing].
+```
 
 ## How context flows
 
