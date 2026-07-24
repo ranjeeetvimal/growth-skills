@@ -12,7 +12,7 @@ description: >
 license: MIT
 metadata:
   author: Ranjeet Vimal
-  version: "1.1.0"
+  version: "1.1.1"
   category: social-media
   related-skills: social-context, founder-context
 ---
@@ -77,6 +77,9 @@ Pre-guess where the business type makes one reasonable; "I don't know" is a vali
 
 ## Step 4 — Strategy: lane, pillars, loop, funnel (DRAFT it, don't just advise)
 1. **Lane + 3-4 content pillars** — the recurring themes from their expertise; every post maps to one.
+   **If the founder wants several lanes ("all of them"), don't just insist on one** — unify them into ONE
+   positioning with those as the pillars. Three lanes = dilution; one positioning + three pillars = focus.
+   Name the through-line that ties them together.
 2. **The growth loop + reply routine** — the ONE loop with most leverage for THIS account, plus the
    concrete weekly reply routine (which accounts, the daily rhythm) from the playbook.
 3. **The funnel — drafted, not described:** a rewritten **bio** (stranger test), the **pinned-post**
