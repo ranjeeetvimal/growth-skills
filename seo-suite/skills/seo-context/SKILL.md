@@ -49,8 +49,11 @@ without this. Make it feel like magic: they give a domain, you draft, they confi
 ## Step 0 — Inherit business context if it exists
 Read `.claude/founder-context.md`. If present, pull product, ICP, differentiator, and
 constraints, and show them back: "Got your business context from PLG-Architect — this
-carries over." Don't re-ask these. If absent, capture a minimal business-basics block
-and offer (never require): "for the full picture, run `founder-context` first."
+carries over." **But confirm it's for the SAME business as the domain you're auditing** (check
+once the domain is in — Step 1): if the founder-context names a different product/domain than the
+site you're given, DON'T inherit it — say so plainly and capture fresh basics for THIS site.
+Don't re-ask what genuinely matches. If absent, capture a minimal business-basics block and offer
+(never require): "for the full picture, run `founder-context` first."
 
 ## Step 1 — Ask for the domain (one free-text ask)
 "What's the site? I'll draft your SEO context from it." Then read the public site.
