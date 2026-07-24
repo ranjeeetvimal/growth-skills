@@ -36,7 +36,7 @@ Just want one suite or skill? Add `--skill`, e.g. `npx skills add ranjeeetvimal/
 **3. Invoke by describing your goal** — skills auto-activate by context, so you rarely name them:
 
 ```
-Set up my founder context for acme.com — interview me about my business.
+Set up my founder context for ranjeetvimal.com — interview me about my business.
 ```
 
 `founder-context` reads your site, auto-drafts your business (product, ICP, positioning), confirms it with you via quick options, and saves `.claude/founder-context.md`. Every other skill reads that file, so you explain your business only once — then it points you to the next skill.

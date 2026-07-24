@@ -44,7 +44,7 @@ The suite is independent — it works with only `.claude/seo-context.md`. But `s
 Start with `seo-context` — it triages and routes you to the right specialist:
 
 ```
-I need SEO help for my site, acme.com
+I need SEO help for my site, ranjeetvimal.com
 Audit my SEO and tell me what's actually broken.
 Why am I not ranking for [term]?
 Why isn't ChatGPT or Perplexity citing my site?    → ai-search-optimization
