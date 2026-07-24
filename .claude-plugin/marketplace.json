@@ -19,6 +19,11 @@
       "name": "seo",
       "source": "./seo-suite",
       "description": "SEO suite (11 skills): technical + AI-crawler audit (with site architecture), AI-search & entity optimization, keyword & competitor research, SEO strategy, on-page, content (strategy + creation), link building, local, programmatic, and revenue analytics. Evidence-based, sacrifice-first."
+    },
+    {
+      "name": "social-media",
+      "source": "./social-media",
+      "description": "Organic social-media growth suite, one skill per platform — grow a real, revenue-tied audience, not vanity followers. Starts with X (Twitter). Evidence-based, sacrifice-first."
     }
   ]
 }

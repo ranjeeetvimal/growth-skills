@@ -1,0 +1,19 @@
+{
+  "name": "social-media",
+  "version": "1.0.0",
+  "description": "Organic social-media growth skills, one per platform — grow a real, revenue-tied audience, not vanity followers. Evidence-based, sacrifice-first. Starts with X (Twitter).",
+  "author": {
+    "name": "Ranjeet Vimal"
+  },
+  "repository": "https://github.com/ranjeeetvimal/growth-skills",
+  "license": "MIT",
+  "keywords": [
+    "social-media",
+    "x",
+    "twitter",
+    "audience",
+    "distribution",
+    "growth"
+  ],
+  "skills": "./skills"
+}

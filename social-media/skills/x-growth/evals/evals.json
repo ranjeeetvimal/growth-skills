@@ -1,0 +1,44 @@
+{
+  "evals": [
+    {
+      "input": "Help me grow on X",
+      "expected_skill": "x-growth",
+      "notes": "Direct X growth request — should trigger"
+    },
+    {
+      "input": "How do I get more followers on Twitter?",
+      "expected_skill": "x-growth",
+      "notes": "Follower goal — should trigger and reframe to a real outcome"
+    },
+    {
+      "input": "I want to build an audience on X",
+      "expected_skill": "x-growth",
+      "notes": "Audience-building on X"
+    },
+    {
+      "input": "How do I get more reach and impressions on my tweets?",
+      "expected_skill": "x-growth",
+      "notes": "Reach/impressions on X"
+    },
+    {
+      "input": "What should I post on X to grow my SaaS?",
+      "expected_skill": "x-growth",
+      "notes": "X content for growth — triggers, ties to the funnel"
+    },
+    {
+      "input": "How do I grow on LinkedIn?",
+      "expected_skill": null,
+      "notes": "Different platform — x-growth must NOT trigger (routes to linkedin-growth once built)"
+    },
+    {
+      "input": "Set up X ads for my product",
+      "expected_skill": null,
+      "notes": "Paid ads, not organic growth — out of scope for x-growth"
+    },
+    {
+      "input": "Write me a Python script",
+      "expected_skill": null,
+      "notes": "Unrelated task — should not trigger"
+    }
+  ]
+}
