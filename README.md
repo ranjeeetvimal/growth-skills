@@ -9,9 +9,50 @@
 | Suite | Skills | Status | What It Covers |
 |---|---|---|---|
 | **[PLG-Architect](PLG-Architect/)** | 7 | ✅ Live | Founder context intake, PLG strategy, ICP research, competitive moats, viral loops, content strategy, growth metrics |
+| **[SEO](seo-suite/)** | 11 | 🚧 In progress | Gatekeeper (`seo-context`) live; technical + AI-crawler audit, AI-search & entity optimization, keyword & competitor research, SEO strategy, on-page, content, link building, local, programmatic, analytics |
+| **[Social Media](social-media/)** | 1 | 🚧 In progress | Organic, per-platform audience-to-revenue growth. `x-growth` (X / Twitter) live; LinkedIn, Instagram, TikTok, YouTube planned |
 | **Paid-Marketing** | 0 | 🚧 Coming soon | Meta Ads, Google Ads, TikTok Ads, creative testing, attribution |
-| **SEO** | 11 | 🚧 In progress | Technical + AI-crawler audit (with site architecture), AI-search & entity optimization, keyword & competitor research, SEO strategy, on-page, content, link building, local, programmatic, analytics |
 | **Analytics** | 0 | 🚧 Coming soon | Event tracking, cohort analysis, experiment design, data pipelines |
+
+## Quick Start (step by step)
+
+Zero to running a skill in four steps.
+
+**1. Install** — one command. Works in Claude Code, Cursor, Gemini CLI, GitHub Copilot, and Antigravity (installs into `.agents/skills/`, shared across agents):
+
+```bash
+npx skills add ranjeeetvimal/growth-skills
+```
+
+Just want one suite or skill? Add `--skill`, e.g. `npx skills add ranjeeetvimal/growth-skills --skill seo-context`.
+
+**2. Reload** so the agent discovers the new skills — **this is not a shell command:**
+
+- **Claude Code:** type `/reload-skills` inside the session.
+- **Cursor / Gemini CLI / Copilot / Antigravity / others:** restart the session.
+
+**3. Invoke by describing your goal** — skills auto-activate by context, so you usually don't name them. For example:
+
+```
+I need SEO help for my site, acme.com
+```
+
+`seo-context` reads your site, reframes "more traffic" into a revenue goal, triages what's likely broken, and writes `.claude/seo-context.md` — then points you to the right specialist skill.
+
+**4. Follow the hand-off.** Each skill leaves a shared `.claude/*.md` file and recommends the next one, so context flows forward: **Context → Research → Strategy → Execution.** You never re-enter the same information.
+
+**More one-line examples** (each auto-activates the right skill):
+
+```
+Set up my founder context — interview me about my business.   → founder-context
+I need a PLG strategy for my SaaS. We help [X] do [Y].         → plg-strategy
+Audit my SEO and tell me what's actually broken.              → seo-context
+Help me grow on X. My handle is @acme.                         → x-growth
+```
+
+> **First time?** Run `founder-context` once to capture the business basics. Every other skill (PLG, SEO, Social) reads that file, so you only explain your business once.
+
+---
 
 ## Installation
 

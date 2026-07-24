@@ -2,7 +2,7 @@
 
 An evidence-based, sacrifice-first SEO skill suite (11 skills) — parallel to PLG-Architect. Takes a domain to a full SEO strategy and the plays to execute it, built for the 2026 landscape (AI search + entities, not just keywords). Overlapping concerns are merged, not split.
 
-Install from the [repo root README](../README.md#quick-install).
+Install from the [repo root README](../README.md#quick-start-step-by-step).
 
 ## Run them in this order
 

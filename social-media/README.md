@@ -2,7 +2,7 @@
 
 Organic social-media growth skills — parallel to PLG-Architect and the SEO suite. One skill per platform, each built to grow a *real, revenue-tied audience* (not vanity followers), the sacrifice-first and evidence-based way the other suites work.
 
-Install from the [repo root README](../README.md#quick-install).
+Install from the [repo root README](../README.md#quick-start-step-by-step).
 
 ## Skills
 
